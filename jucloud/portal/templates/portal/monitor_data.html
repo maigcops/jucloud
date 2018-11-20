@@ -1,0 +1,54 @@
+{% extends "_base.html" %}
+
+{% block content %}
+    <div class="content-page">
+		<!-- Start content -->
+        <div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xl-12">
+						<div class="breadcrumb-holder">
+							<h1 class="main-title float-left">实时数据</h1>
+							<ol class="breadcrumb float-right">
+								<li class="breadcrumb-item">Home</li>
+								<li class="breadcrumb-item active">实时数据</li>
+							</ol>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">						
+						<div class="card mb-3">
+							<div class="card-header">
+								<h3><i class="fa fa-square-o"></i>温度</h3>
+									Below is an example of a basic card with mixed content and a fixed width. Cards have no fixed width to start, so they’ll naturally fill the full width of its parent element. This is easily customized with our various <a target="_blank" href="http://getbootstrap.com/docs/4.0/components/card/#sizing">sizing options</a>
+							</div>
+							<div class="card-body">
+								<div class="card" style="width: 20rem;">
+									<img class="card-img-top" src="/static/assets/images/sample-image-3.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h4 class="card-title">Card title</h4>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+							</div>														
+						</div><!-- end card-->					
+					</div>
+				</div>
+				<!-- end row -->
+            </div>
+			<!-- END container-fluid -->
+		</div>
+		<!-- END content -->
+	</div>
+{% endblock %}
+
+{% block footscript %}
+<script>
+$(function($){
+	jucloud.initSideMenu("/monitor/data", 2);
+});
+</script>
+{% endblock %}

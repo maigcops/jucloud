@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>辰聚环境监控平台</title>
+		<meta name="description" content="环境监控平台">
+		<meta name="author" content="www.5188-cloud.com">
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="/static/assets/images/favicon.ico">
+		<!-- Bootstrap CSS -->
+		<link href="/static/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<!-- Font Awesome CSS -->
+		<link href="/static/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<!-- Custom CSS -->
+		<link href="/static/assets/css/style.css" rel="stylesheet" type="text/css" />
+		<!-- BEGIN CSS for this page -->
+		<link rel="stylesheet" type="text/css" href="/static/assets/css/dataTables.bootstrap4.min.css"/>
+		<!-- END CSS for this page -->
+		
+</head>
+<body class="adminbody">
+<div id="main">
+    <!-- 顶部导航 -->
+    {% block headerbar %}
+        {% include "_headerbar.html" %}
+    {% endblock %}
+
+    <!-- 侧边导航 -->
+    {% block siderbar %}
+        {% include "_siderbar.html" %}
+    {% endblock %}
+
+    <!-- 主要内容-->
+    {% block content %} {% endblock %}
+
+    <!-- 底部内容: 版权等信息-->
+    {% block footer %}
+        {% include "_footer.html" %}
+    {% endblock %}
+</div>
+    <!-- 通用js -->
+    {% block footjs %}
+        {% include "_footjs.html" %}
+    {% endblock %}
+    <!-- 自定义js脚本  -->
+    {% block footscript %} {% endblock %}
+    <!-- end 自定义脚本 -->
+</body>
+</html>
