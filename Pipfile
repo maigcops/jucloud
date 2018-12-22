@@ -4,12 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "==2.1.0"
+django = "==2.1.4"
 mysqlclient = "*"
-pymysql = "*"
+gevent = "*"
+ipdb = "*"
 
 [dev-packages]
 ipdb = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.6"

@@ -21,13 +21,13 @@
 					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">						
 						<div class="card mb-3">
 							<div class="card-header">
-								<h3><i class="fa fa-wpexplorer"></i>{{ resp.created_at }}</h3>
+								<h3><i class="fa fa-wpexplorer"></i>{{ resp.created_at|date:'Y-m-d H:i:s' }}</h3>
 							</div>
 							<div class="card-body">
 								<div class="card" style="width: 20rem;">
 									<img class="card-img-top" src="/static/assets/images/sample-image-3.jpg" alt="Card image cap">
 									<div class="card-body">
-										<h4 class="card-title">温度</h4>
+										<h4 class="card-title"><i class='fa fa-thermometer'></i>温度</h4>
 										<p class="card-text">{{resp.display_data}}℃</p>
 									</div>
 								</div>

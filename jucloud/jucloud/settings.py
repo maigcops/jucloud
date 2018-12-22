@@ -79,9 +79,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'jucloud',
         'USER': 'root',
-        'PASSWORD': 'test1234!',
+        'PASSWORD': 'root1234!',
         'HOST': '127.0.0.1',
-        'PORT': '13306'
+        'PORT': '3306'
     }
 }
 
@@ -110,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 

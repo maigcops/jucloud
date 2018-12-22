@@ -1,4 +1,18 @@
 # coding=utf-8
+import struct
+
+def pack_server_addr(val):
+    return struct.pack('B', int(val))
+
+def pack_func(val):
+    return struct.pack('B', int(val))
+
+def pack_data_addr(val):
+    return struct.pack('H', int(val))
+
+def pack_data_len(val):
+    return struct.pack('H', int(val))
+	
 
 class CRC16:
     """
@@ -64,12 +78,11 @@ class CRC16:
     def __init__(self):
         pass
 
-    def createcrc(self, hex_data):
+    def createcrc(self, array):
         """
         hex_data: 
             example '010300000001'
         """
-        array = list(bytearray.fromhex(hex_data))
         crchi = 0xff
         crclo = 0xff
         for i in range(0,len(array)):
