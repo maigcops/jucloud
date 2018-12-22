@@ -64,7 +64,12 @@ class CRC16:
     def __init__(self):
         pass
 
-    def createcrc(self,array):
+    def createcrc(self, hex_data):
+        """
+        hex_data: 
+            example '010300000001'
+        """
+        array = list(bytearray.fromhex(hex_data))
         crchi = 0xff
         crclo = 0xff
         for i in range(0,len(array)):
